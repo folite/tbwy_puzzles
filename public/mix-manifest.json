@@ -1,0 +1,11 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/css/fullpage.min.css": "/css/fullpage.min.css",
+    "/js/fullpage.min.js": "/js/fullpage.min.js",
+    "/css/bootstrap.min.css": "/css/bootstrap.min.css",
+    "/js/bootstrap.bundle.min.js": "/js/bootstrap.bundle.min.js",
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/jquery.dataTables.min.js": "/js/jquery.dataTables.min.js",
+    "/css/jquery.dataTables.min.css": "/css/jquery.dataTables.min.css"
+}
