@@ -15,7 +15,7 @@ class TopicController extends Controller
      */
     public function index()
     {
-        $topics = topic::all();
+        $topics = topic::orderBy('id')->get();
 
         return $topics;
 
@@ -32,9 +32,14 @@ class TopicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $topic = new topic;
+        $topic->topic = $request->topic;
+        if($topic->save()){
+            return $topic;
+        }
+        return 0;
     }
 
     /**
@@ -88,8 +93,9 @@ class TopicController extends Controller
      * @param  \App\topic  $topic
      * @return \Illuminate\Http\Response
      */
-    public function destroy(topic $topic)
+    public function destroy(Request $request, $id)
     {
-        //
+        // return 0;
+        return topic::where('id', $id)->delete();
     }
 }

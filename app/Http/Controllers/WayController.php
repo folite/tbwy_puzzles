@@ -24,9 +24,14 @@ class WayController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $way = new way;
+        $way->way = $request->way;
+        if($way->save()){
+            return $way;
+        }
+        return 0;
     }
 
     /**
@@ -80,8 +85,8 @@ class WayController extends Controller
      * @param  \App\way  $way
      * @return \Illuminate\Http\Response
      */
-    public function destroy(way $way)
+    public function destroy($id)
     {
-        //
+        return way::where('id', $id)->delete();
     }
 }

@@ -22,4 +22,5 @@ mix.copy('node_modules/jquery/dist/jquery.min.js','public/js/jquery.min.js');
 //datatable
 mix.copy('node_modules/datatables.net/js/jquery.dataTables.min.js','public/js/jquery.dataTables.min.js');
 mix.copy('node_modules/datatables.net-dt/css/jquery.dataTables.min.css','public/css/jquery.dataTables.min.css');
+mix.copy('node_modules/datatables.net-dt/images','public/images');
 
